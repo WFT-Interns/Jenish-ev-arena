@@ -42,6 +42,7 @@ li  {
     font-weight: 500;
     font-size: 24px;
     color:black;
+    padding: 5px;
 }
 
 .navbar  li:hover {
@@ -131,6 +132,7 @@ li  {
 .imageOption li {
     margin-right: 20px;
     margin-left: 20px;
+    padding: 5px;
     font-weight: 500;
     font-size: 24px;
     color: #000000;
