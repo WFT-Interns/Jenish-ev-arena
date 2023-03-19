@@ -1,0 +1,252 @@
+@import url(https://www.cdnfonts.com/gotham.font);
+
+*{
+    font-family: 'Gotham';
+} 
+
+a {
+    text-decoration: none;
+}
+
+
+li  {
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    padding-top: 5px;
+    top: 0px;
+    position: sticky;
+    background-color: white;
+    z-index: 3;
+}
+
+.navbar .logo {
+    width: 12%;
+}
+
+.navbar .location {
+    width: 18%;
+    display: flex;
+}
+
+.navbar .menu {
+    width: 60%;
+}
+
+.navbar .menu li{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    color:black;
+}
+
+.navbar  li:hover {
+    background-color: #47AF71;
+}
+
+.navbar .search {
+    width: 10%;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.navbar .search img {
+    float: right;
+}
+
+.dVideo{
+    position: absolute;
+    z-index: -1;
+    width: 99%;
+    height: 90vh;
+}
+
+.dVideo img{
+    width: 99.6%;
+    height: 90vh;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+
+.vTopText {
+    display: flex;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+.vTopText .vMidText {
+    color: #47AF71;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.vDown {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.btnWhy {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.btnWhy button{
+    width: 430px;
+    height: 84px;
+    background: rgba(71, 175, 113, 0.51);
+    font-size: 40px;
+    color: white;
+}
+
+.btnWhy button:hover {
+    background-color: #47AF71;
+}
+
+
+.imageSliderText {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000;
+}
+
+.imageOption {
+    display: flex;
+    justify-content: center;
+}
+
+.imageOption li {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+
+.imageOption li:hover {
+    background-color: #47AF71;
+}
+
+/* slider */
+
+
+.slideImage {
+    max-width: 100%;
+    position: absolute;
+}
+
+/* .myslides {
+    display: none;
+} */
+
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+}
+
+.next {
+    right: 0;
+    margin-right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imgDot {
+    display: flex;
+    justify-content: center;
+    margin-top: 610px;
+    position: relative;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+.btnCompare {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.btnCompare button {
+    width: 262px;
+    height: 66px;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.btnCompare button:hover {
+    background-color: blanchedalmond;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    margin-top: 40px;
+    height: 280px;
+    color: white;
+}
+
+.footer .footerMenu{
+    width: 20%;
+    padding-top: 30px;
+}
+
+.footer li{
+    display: list-item;
+    padding: 5px;
+}
+
+.footer a{
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.footer .footerLogo{
+    width: 60%;
+    padding-left: 30%;
+    padding-top: 60px;
+}
+
+.footerLogo .copyright {
+    padding-left: 3%;
+    padding-top: 60px;
+}
+
+
+.footer .social {
+    width: 20%;
+    padding-top: 70px;
+    padding-right: 30px;
+}
+
