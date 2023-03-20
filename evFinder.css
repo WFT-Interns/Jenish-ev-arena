@@ -1,0 +1,69 @@
+@import url(https://www.cdnfonts.com/gotham.font);
+
+*{
+    font-family: 'Gotham';
+} 
+
+a {
+    text-decoration: none;
+}
+
+
+li  {
+    list-style-type: none;
+    display: inline;
+}
+
+.evOption {
+    display: flex;
+    justify-content: center;
+}
+
+.evOption li {
+    margin: 20px;
+}
+
+.evFilter {
+    /* display: flex; */
+    justify-content: center;
+    border-style:solid;
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+    padding: 5px;
+}
+
+.evFilter .dropdown {
+    display: flex;
+    margin-left: 25%;
+}
+
+.dropbtn {
+    display: flex;
+    background-color: white;
+    margin: 10px;
+}
+
+.dropbtn span {
+    font-size: 10px;
+}
+
+.evFilter .filterDown {
+    display: flex;
+    justify-content: center;
+}
+
+.filterDown .slideBtn {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border-style: solids;
+    margin: 0, 2px;
+    background-color: black;
+}
+
+.filterDown .slide {
+    display: flex;
+    background-color: brown;
+}

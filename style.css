@@ -303,5 +303,20 @@ and (max-device-width: 1024px) {
 }
 
 @media screen and (max-device-width: 480px) {
-    
+    .dVideo {
+        margin-top: -200px;
+    }
+
+    .vTopText{
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    .vMidText
+    font-size: 30px;
+
+
+    .btnWhy{
+
+    }
 }
