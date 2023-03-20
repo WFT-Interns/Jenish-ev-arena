@@ -28,6 +28,11 @@ li  {
     width: 12%;
 }
 
+.navbar .logo img {
+    height: 50%;
+    width: 100%;
+}
+
 .navbar .location {
     width: 18%;
     display: flex;
@@ -40,13 +45,13 @@ li  {
 .navbar .menu li{
     margin-left: 30px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color:black;
     padding: 5px;
 }
 
 .navbar  li:hover {
-    background-color: #47AF71;
+    background-color: #3A9B61;
 }
 
 .navbar .search {
@@ -62,13 +67,13 @@ li  {
 .dVideo{
     position: absolute;
     z-index: -1;
-    width: 99%;
-    height: 90vh;
+    height: 89vh;
+    width: 95vw;
 }
 
-.dVideo img{
-    width: 99.6%;
-    height: 90vh;
+.dVideo video{
+    height: 100%;
+    width: 100%;
     z-index: -1;
     filter: brightness(50%);
 }
@@ -110,7 +115,7 @@ li  {
 }
 
 .btnWhy button:hover {
-    background-color: #47AF71;
+    background-color: #3A9B61;
 }
 
 
@@ -139,20 +144,22 @@ li  {
 }
 
 .imageOption li:hover {
-    background-color: #47AF71;
+    background-color: #3A9B61;
 }
 
 /* slider */
 
 
-.slideImage {
-    max-width: 100%;
+.slideImages {
     position: absolute;
+    width: 99%;
 }
 
-/* .myslides {
+.mySlides{
     display: none;
-} */
+    width: 100%;
+}
+
 
 .prev , .next {
     cursor: pointer;
@@ -174,7 +181,7 @@ li  {
 .imgDot {
     display: flex;
     justify-content: center;
-    margin-top: 610px;
+    margin-top: 40.5%;
     position: relative;
 }
 
@@ -252,3 +259,49 @@ li  {
     padding-right: 30px;
 }
 
+@media screen and (min-width: 1024px) {
+
+
+
+}
+
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar .menu li{
+        margin-left: 0px;
+    }
+
+    .dVideo {
+        margin-top: -120px;
+    }
+
+    .vTopText {
+        margin-top: 180px;
+    }
+
+
+    .imageSliderText {
+        margin-top: 100px;
+    }
+
+    .btnCompare {
+        margin-top: 30px;
+    }
+
+
+    .footer .footerLogo {
+        padding-left: 10%;
+    }
+
+    .footer .social img {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    
+}

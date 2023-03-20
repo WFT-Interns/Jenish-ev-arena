@@ -9,12 +9,13 @@
     <title>EV Arena | Home</title>
 </head>
 <body>
-    <div class="navbar">
+    <!-- Nav bar -->
+    <div class="navbar">   
         <div class="logo">
-            <img src="Images/logo.png" height="35px" > 
+            <img src="Assets/Images/logo.png" height="35px" alt="logo"> 
         </div>
         <div class="location">
-            <img class="loc" src="Images/location-01.svg" width="40px" height="40px" >
+            <img class="loc" src="Assets/Images/location-01.svg" width="40px" height="40px" >
             <div class="locText">
                 Nearest Charging Station
                 <b>Kathmmandu</b>
@@ -29,11 +30,15 @@
             </ul>
         </div>
         <div class="search">
-            <img src="Images/Vector.svg">
+            <img src="Assets/Images/Vector.svg">
         </div>
     </div>
+    <!-- Main body  -->
+    <!-- video  -->
     <div class="dVideo">
-        <img src="Videos/ezgif.com-video-to-gif (5).gif">
+        <video autoplay muted loop width="150px">
+            <source src="Assets/Videos/main_video.mp4">
+        </video>
     </div>
     <div class="vTopText">
         <div class="vFText">Compare</div>
@@ -49,6 +54,7 @@
         <button>Why Choose EV?</button>
     </div>
 
+    <!-- Image slider -->
     <div class="imageSliderText">
         Top Selling EV's on 2022
     </div>
@@ -61,25 +67,17 @@
         </ul>
     </div>
 
-    <div class="slideImage">
-        <div class="mySlides">
-          <img src="Images/tesla3.png" style="width: 99.4%">
-        </div>
-        <div class="mySlides">
-          <img src="Images/porsche.png" style="width:99.4%">
-        </div>
-        <div class="mySlides">
-          <img src="Images/audi.png" style="width:99.4%">
-        </div>
-        <div class="mySlides">
-            <img src="Images/BMW.png" style="width:99.4%">
-        </div>
-        <div class="mySlides">
-            <img src="Images/Renault.png" style="width: 99.4%">
-        </div>
+    <div class="slideImages">
+        <img class="mySlides" src="Assets/Images/tesla3.png">
+        <img class="mySlides" src="Assets/Images/porsche.png">
+        <img class="mySlides" src="Assets/Images/audi.png">
+        <img class="mySlides" src="Assets/Images/BMW.png">
+        <img class="mySlides" src="Assets/Images/Renault.png">
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+
     <div class="imgDot">
         <span class="dot" onclick="currentSlide(0)"></span>
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -92,6 +90,8 @@
         <button>Compare</button>
     </div>
 
+
+    <!-- footer  -->
     <div class="footer">
         <div class="footerMenu">
             <ul>
@@ -103,16 +103,16 @@
             </ul>
         </div>
         <div class="footerLogo">
-            <img src="Images/logo_footer.png">
+            <img src="Assets/Images/logo_footer.png">
             <div class="copyright">
                 &copy; All Rights Reserved 2023.
             </div>
         </div>
         <div class="social">
-            <img src="Images/🦆 icon _Facebook_.svg">
-            <img src="Images/🦆 icon _Instagram_.svg">
-            <img src="Images/🦆 icon _Twitter_.svg">
-            <img src="Images/🦆 icon _YouTube_.svg">
+            <img src="Assets/Images/🦆 icon _Facebook_.svg">
+            <img src="Assets/Images/🦆 icon _Instagram_.svg">
+            <img src="Assets/Images/🦆 icon _Twitter_.svg">
+            <img src="Assets/Images/🦆 icon _YouTube_.svg">
             <br><br>
             Waterflow Technology
             Kathmandu, Nepal
