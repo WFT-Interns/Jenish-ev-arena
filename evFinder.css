@@ -15,33 +15,51 @@ li  {
 }
 
 .evOption {
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     justify-content: center;
 }
 
+.evOption ul{
+    display: inline-flex;
+    list-style: none;
+    margin-top: 90px;
+}
+
 .evOption li {
-    margin: 20px;
+    background:rgba(218, 218, 218, 1);
+    padding: 6px 60px;
+    margin: 2px 4px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.evOption li:hover{
+    background-color: #DADADA;
 }
 
 .evFilter {
     /* display: flex; */
+    position: absolute;
     justify-content: center;
     border-style:solid;
     width: 50%;
-    height: 30%;
     margin-left: 25%;
     padding: 5px;
+    z-index: 1;
 }
 
 .evFilter .dropdown {
     display: flex;
     margin-left: 25%;
+    z-index: 1;
 }
 
 .dropbtn {
     display: flex;
     background-color: white;
     margin: 10px;
+    padding: 10px;
 }
 
 .dropbtn span {
@@ -50,20 +68,39 @@ li  {
 
 .evFilter .filterDown {
     display: flex;
-    justify-content: center;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
 }
-
-.filterDown .slideBtn {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border-style: solids;
-    margin: 0, 2px;
-    background-color: black;
-}
+ 
 
 .filterDown .slide {
-    display: flex;
-    background-color: brown;
+    margin-left: 20px;
+    width: 60%;
+    z-index: 1;
 }
+
+.filterDown .slide .slideBar {
+    width: 100%;
+    background: black;
+}
+
+.filterDown .filterbtn {
+    background-color: black;
+    color: white;
+    margin-left: 40px;
+} 
+
+
+.evDisplay{
+    width: 1480px;
+    height: 665px;
+    margin-top: 4%;
+    margin-left: 7%;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: -1;
+    position: absolute;
+}
+
+
