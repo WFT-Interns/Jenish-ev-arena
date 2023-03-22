@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./evFinder.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/evFinder.css">
     <title>EV Arena | EV Finder</title>
 </head>
+
 <body>
     <!-- Nav bar -->
-    <div class="navbar">   
+    <div class="navbar">
         <div class="logo">
-            <img src="Assets/Images/logo.png" height="35px" alt="logo"> 
+            <img src="Assets/Images/logo.png" height="35px" alt="logo">
         </div>
         <div class="location">
-            <img class="loc" src="Assets/Images/location-01.svg" width="40px" height="40px" >
+            <img class="loc" src="Assets/Images/location-01.svg" width="40px" height="40px">
             <div class="locText">
                 Nearest Charging Station
                 <b>Kathmmandu</b>
@@ -43,42 +45,99 @@
     <div class="evFilter">
         <div class="dropdown">
             <div class="dropdown-brandName">
-                <button onclick="" class="dropbtn">EV - Brand Name  <span>&#10095;</span></button>
-                <!-- <div id="mydropdown" class="dropContent">
-                    <a href="#">Ford</a>
-                    <a href="#">Lexus</a>
-                    <a href="#">Tesla</a>
-                </div> -->
+                <select class="dropbtn">
+                    <option hidden selected>EV-Brand Name</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="Audi">Audi</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="Porsche">Porsche</option>
+                </select>
             </div>
             <div class="dropdown-evRange">
-                <button onclick="" class="dropbtn">EV - Range  <span>&#10095;</span></button>
-                <!-- <div id="mydropdown" class="dropContent">
-                    <a href="#">0-100 KM</a>
-                    <a href="#">101-200 KM</a>
-                    <a href="#">201-300 KM</a>
-                    <a href="#">301-400 KM</a>
-                </div> -->
+                <select class="dropbtn">
+                    <option hidden selected>EV-Range</option>
+                    <option value="">0-100</option>
+                    <option value="">101-200</option>
+                    <option value="">201-300</option>
+                    <option value="">301-400</option>
+                    <option value="">401-500</option>
+                </select>
             </div>
             <div class="dropdown-date">
-                <button onclick="" class="dropbtn" >Date  <span>&#10095;</span></button>
-                <!-- <div id="dropdown-date" class="dropContent">
-                    <a href="#">2022</a>
-                    <a href="#">2021</a>
-                    <a href="#">2020</a>
-                    <a href="#">2019</a>
-                    <a href="#">2018</a>
-                </div> -->
+                <select class="dropbtn">
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="">2022</option>
+                </select>
             </div>
         </div>
         <div class="filterDown">
-            Price Range
-            <div class="slide">
-                <input type="range" class="slideBar" min="10000" max="400000">
+            <span>Price Range</span>
+            <div class="range_container">
+                <div class="sliders_control">
+                    <input id="fromSlider" type="range" value="10000" min="10000" max="500000" />
+                    <input id="toSlider" type="range" value="500000" min="10000" max="500000" />
+                </div>
+                <div class="form_control">
+                    <div class="form_control_container">
+                        <input class="form_control_container__time__input" type="number" id="fromInput" value="10000"
+                            min="10000" max="500000" />
+                    </div>
+                    <div class="form_control_container">
+                        <input class="form_control_container__time__input" type="number" id="toInput" value="500000" min="10000"
+                            max="500000" />
+                    </div>
+                </div>
             </div>
             <button id="btnFilter" class="filterbtn">SEARCH EV &#10095;</button>
         </div>
     </div>
-    <div class="evDisplay"></div>
-    
+    <div class="evDisplay">
+        <div class="car">
+
+        </div>
+        <div class="car">
+
+        </div>
+        <div class="car">
+
+        </div>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+        <div class="footerMenu">
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> EV Finder</a></li>
+                <li><a href="#"> Compare</a></li>
+                <li><a href="#"> Browse</a></li>
+                <li><a href="#"> News</a></li>
+            </ul>
+        </div>
+        <div class="footerLogo">
+            <img src="Assets/Images/logo_footer.png">
+            <div class="copyright">
+                &copy; All Rights Reserved 2023.
+            </div>
+        </div>
+        <div class="social">
+            <img src="Assets/Images/🦆 icon _Facebook_.svg">
+            <img src="Assets/Images/🦆 icon _Instagram_.svg">
+            <img src="Assets/Images/🦆 icon _Twitter_.svg">
+            <img src="Assets/Images/🦆 icon _YouTube_.svg">
+            <br><br>
+            Waterflow Technology
+            Kathmandu, Nepal
+        </div>
+    </div>
+
+    <script src="evFinder.js"></script>
 </body>
+
 </html>
