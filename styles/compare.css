@@ -1,0 +1,18 @@
+/* .headTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 40px;
+} */
+
+.compare-table {
+    display: flex;
+    justify-content: center;
+}
+
+.compare-table .evSelect {
+    margin: 40px 10%;
+    width: 150px;
+    font-size: 20px;
+}

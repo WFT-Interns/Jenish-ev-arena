@@ -1,0 +1,219 @@
+@import url(https://www.cdnfonts.com/gotham.font);
+
+* {
+    font-family: 'Gotham';
+
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.evOption {
+    display: inline-flex;
+
+    width: 100%;
+    justify-content: center;
+}
+
+.evOption ul {
+    display: inline-flex;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.evOption li {
+    background: #F8F8F8;
+    padding: 6px 60px;
+    margin: 2px 4px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.evOption li:hover {
+    background-color: rgba(218, 218, 218, 1);
+}
+
+
+.evFilter {
+    position: absolute;
+    justify-content: center;
+    border-style: solid;
+    width: 50%;
+    margin-left: 25%;
+    padding: 5px;
+    z-index: 4;
+    background-color: white;
+}
+
+.evFilter .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.dropbtn {
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+
+    appearance: none;
+    width: 200px;
+    background-image: url('/Assets/Images/rightarrow.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: calc(100% - 3px) center;
+
+}
+
+
+.evFilter .filterDown {
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+
+.evFilter .filterDown span {
+    font-size: 20px;
+}
+
+/* Price range controller */
+
+range_container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.sliders_control {
+    position: relative;
+    min-height: 50px;
+    width: 450px;
+    margin: 10px 40px;
+}
+
+.form_control {
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    font-size: 24px;
+    color: #000000;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #000000;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #000000;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #000000;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type="number"] {
+    color: #8a8383;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #c6c6c6;
+    pointer-events: none;
+}
+
+#fromSlider {
+    height: 0;
+    z-index: 1;
+}
+
+/* search button */
+
+.filterDown .filterbtn {
+    background-color: black;
+    color: white;
+    margin-left: 40px;
+    height: 30px;
+}
+
+
+.evDisplay {
+    background-color: white;
+    width: 85vw;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 7%;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 1;
+    position: absolute;
+}
+
+
+
+.footer {
+    margin-top: 800px;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1027px) {
+
+    .evOption li {
+        background: #F8F8F8;
+        padding: 6px 20px;
+        margin: 2px 4px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .footer {
+        margin-top: 700px;
+    }
+}
